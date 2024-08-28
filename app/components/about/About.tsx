@@ -3,6 +3,7 @@ import Reveal from '../utils/Reveal';
 import SectionHeader from '../utils/SectionHeader';
 import styles from './About.module.scss';
 import SocialMediaLinks from '../nav/components/SocialMediaLinks';
+import Stats from './Stats';
 
 export default function About() {
   return (
@@ -32,13 +33,14 @@ export default function About() {
           <Reveal>
             <div className={styles.links}>
               <div className={styles.linksText}>
-                <span>Find more about me here</span>
+                <span>More about me here</span>
                 <AiOutlineArrowRight />
               </div>
               <SocialMediaLinks />
             </div>
           </Reveal>
         </div>
+        <Stats />
       </div>
     </section>
   );
