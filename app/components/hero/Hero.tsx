@@ -12,7 +12,9 @@ export default function Hero() {
             <h1 className={styles.title}>Dean Attias</h1>
           </Reveal>
           <Reveal>
-            <h2 className={styles.subtitle}><span>Web Developer</span></h2>
+            <h2 className={styles.subtitle}>
+              <span>Full Stack Developer</span>
+            </h2>
           </Reveal>
           <Reveal>
             <p className={styles.about}>Insert about text here.</p>
