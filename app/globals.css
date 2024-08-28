@@ -1,4 +1,5 @@
 :root {
+  color-scheme: dark;
   font-size: 62.5%;
 
   --background: rgb(17, 17, 17);
@@ -7,7 +8,16 @@
   --background-dark: rgb(8, 8, 8);
 
   --text: rgb(235, 236, 243);
-  --brand: rgb(68, 121, 226);
+  --brand: rgb(61, 103, 255);
+  --brand-gradient: linear-gradient(
+    260deg,
+    #3d67ff 0%,
+    #9773ff 50%,
+    #efceff 80%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
 
   --text-xs: 1.6rem;
   --text-sm: 1.8rem;

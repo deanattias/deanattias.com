@@ -7,7 +7,7 @@ export default function Heading() {
     <header className={styles.heading}>
       <SocialMediaLinks />
       <OutlineButton onClick={() => window.open('dean-attias-cv.pdf')}>
-        My CV
+        My Resume
       </OutlineButton>
     </header>
   );

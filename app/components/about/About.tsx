@@ -13,8 +13,8 @@ export default function About() {
         <div>
           <Reveal>
             <p className={styles.aboutText}>
-              I&apos;m Dean Attias, a full stack developer with hands-on
-              experience and a strong foundation in computer science.
+              I&apos;m a full stack developer with hands-on experience and a
+              strong foundation in computer science.
               <br />
               <br />A self-driven learner who enjoys solving complex problems
               and collaborating with talented teams.
@@ -23,17 +23,15 @@ export default function About() {
           <Reveal>
             <p className={styles.aboutText}>
               Currently interning at LearnX, developing client-side and
-              server-side features using React, TypeScript, Python FastAPI,
-              Docker, and PostgreSQL.
+              server-side features using <code>React</code>,{' '}
+              <code>TypeScript</code>, <code>Python</code>, <code>FastAPI</code>
+              , <code>Docker</code>, and <code>PostgreSQL</code>.
             </p>
-          </Reveal>
-          <Reveal>
-            <p className={styles.aboutText}>Feel free to reach out.</p>
           </Reveal>
           <Reveal>
             <div className={styles.links}>
               <div className={styles.linksText}>
-                <span>More about me here</span>
+                <label>More about me</label>
                 <AiOutlineArrowRight />
               </div>
               <SocialMediaLinks />

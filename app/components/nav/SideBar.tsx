@@ -41,7 +41,7 @@ export default function SideBar() {
               : (document.location.hash = '');
           }}
         >
-          D<span>.</span>
+          D
         </span>
         <motion.a
           initial={{ x: -70 }}
