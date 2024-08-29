@@ -5,6 +5,7 @@ import About from './components/about/About';
 import Hero from './components/hero/Hero';
 import Heading from './components/nav/Heading';
 import SideBar from './components/nav/SideBar';
+import Projects from './components/projects/Projects';
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
           <Heading />
           <Hero />
           <About />
+          <Projects />
           <div
             style={{
               height: '200px',

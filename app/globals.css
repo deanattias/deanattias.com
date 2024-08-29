@@ -2,19 +2,14 @@
   color-scheme: dark;
   font-size: 62.5%;
 
-  --background: rgb(17, 17, 17);
+  --background: oklch(0.1468 0.01 266);
   --bg-opaque: rgb(17, 17, 17, 0.25);
   --background-light: rgb(35, 35, 35);
   --background-dark: rgb(8, 8, 8);
 
-  --text: rgb(235, 236, 243);
-  --brand: rgb(61, 103, 255);
-  --brand-gradient: linear-gradient(
-    260deg,
-    #3d67ff 0%,
-    #9773ff 50%,
-    #efceff 80%
-  );
+  --text: oklch(0.9366 0.027 266);
+  --brand: oklch(0.646 0.172 266);
+
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;

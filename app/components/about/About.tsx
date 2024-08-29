@@ -23,9 +23,12 @@ export default function About() {
           <Reveal>
             <p className={styles.aboutText}>
               Currently interning at LearnX, developing client-side and
-              server-side features using <code>React</code>,{' '}
-              <code>TypeScript</code>, <code>Python</code>, <code>FastAPI</code>
-              , <code>Docker</code>, and <code>PostgreSQL</code>.
+              server-side features using <code className="chip">React</code>,{' '}
+              <code className="chip">TypeScript</code>,{' '}
+              <code className="chip">Python</code>,{' '}
+              <code className="chip">FastAPI</code>,{' '}
+              <code className="chip">Docker</code>, and{' '}
+              <code className="chip">PostgreSQL</code>.
             </p>
           </Reveal>
           <Reveal>

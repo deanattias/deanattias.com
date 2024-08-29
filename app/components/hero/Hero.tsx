@@ -4,8 +4,6 @@ import Reveal from '../utils/Reveal';
 import styles from './Hero.module.scss';
 import Image from 'next/image';
 import Profile from '@/public/profile.jpg';
-import SocialMediaLinks from '../nav/components/SocialMediaLinks';
-import { MdEmail } from 'react-icons/md';
 
 export default function Hero() {
   return (
