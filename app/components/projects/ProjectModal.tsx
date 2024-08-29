@@ -71,10 +71,12 @@ export default function ProjectModal({
             <p className={styles.linksText}>Links</p>
             <div className={styles.links}>
               <Link target="_blank" rel="nofollow" href={sourceCode}>
-                <AiFillGithub /> Source Code
+                <AiFillGithub />
+                <span></span>
+                Source Code
               </Link>
               <Link target="_blank" rel="nofollow" href={projectLink}>
-                <BsFillRocketTakeoffFill /> Website
+                <BsFillRocketTakeoffFill /> <span></span>Website
               </Link>
             </div>
           </div>

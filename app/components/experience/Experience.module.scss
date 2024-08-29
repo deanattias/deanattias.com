@@ -15,6 +15,9 @@
 .company {
   font-size: var(--text-md);
   font-weight: bold;
+  i:hover {
+    text-decoration: underline;
+  }
 }
 
 .period,
@@ -24,11 +27,11 @@
 
 .position {
   font-weight: bold;
+  font-size: var(--text-md);
   background-image: linear-gradient(
-    91.83deg,
-    oklch(0.8297 0.114 352) -20.26%,
-    oklch(0.82 0.082 266) 20.55%,
-    oklch(0.646 0.172 266) 60.81%
+    to right,
+    rgb(0, 147, 233) 0%,
+    rgb(126, 237, 224) 100%
   );
   background-clip: text;
   -webkit-background-clip: text;
@@ -41,7 +44,6 @@
   margin-bottom: 1.8rem;
   font-weight: 200;
 }
-
 
 .techStack {
   display: flex;

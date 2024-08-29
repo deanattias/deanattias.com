@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import Reveal from '../utils/Reveal';
 import styles from './Experience.module.scss';
 
@@ -22,8 +23,14 @@ export default function ExperienceItem({
     <div className={styles.experience}>
       <div className={styles.heading}>
         <Reveal>
-          <span className={styles.comapny}>{comapny}</span>
+          <span className={styles.company}>
+            {comapny} -{' '}
+            <Link href="https://codingforkids.io">
+              <i>codingforkids.io</i>
+            </Link>
+          </span>
         </Reveal>
+
         <Reveal>
           <span className={styles.period}>{period}</span>
         </Reveal>
@@ -39,11 +46,11 @@ export default function ExperienceItem({
       </div>
       <div className={styles.description}>
         {description.map((line) => (
-          <Reveal>
-            <p className={styles.description} key={line}>
-              {line}
-            </p>
-          </Reveal>
+          <div key={line}>
+            <Reveal>
+              <p className={styles.description}>{line}</p>
+            </Reveal>
+          </div>
         ))}
       </div>
       <Reveal>
