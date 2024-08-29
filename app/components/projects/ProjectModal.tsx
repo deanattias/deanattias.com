@@ -1,3 +1,5 @@
+'use client';
+
 import { useEffect } from 'react';
 import { MdClose } from 'react-icons/md';
 import styles from './ProjectModal.module.scss';
@@ -7,6 +9,7 @@ import Link from 'next/link';
 import { AiFillGithub } from 'react-icons/ai';
 import ReactDOM from 'react-dom';
 import { BsFillRocketTakeoffFill } from 'react-icons/bs';
+import { useKey } from 'react-use';
 
 interface Props {
   isOpen: boolean;
@@ -19,7 +22,7 @@ interface Props {
   modalContent: JSX.Element;
 }
 
-export const ProjectModal = ({
+export default function ProjectModal({
   modalContent,
   projectLink,
   setIsOpen,
@@ -28,7 +31,9 @@ export const ProjectModal = ({
   title,
   sourceCode,
   techStack,
-}: Props) => {
+}: Props) {
+  useKey('Escape', () => setIsOpen(false), {}, [isOpen]);
+
   useEffect(() => {
     const body = document.querySelector('body');
     if (isOpen) {
@@ -53,14 +58,14 @@ export const ProjectModal = ({
         <Image
           priority
           src={imgSrc}
-          alt={`An screenshot showcasing the ${title} project.`}
+          alt={`A screenshot showcasing the ${title} project.`}
           width={500}
           height={400}
           className={styles.modalImage}
         />
         <div className={styles.modalContent}>
           <h4>{title}</h4>
-          <div className={styles.modalTechStack}>{techStack.join(' - ')}</div>
+          <code className={styles.modalTechStack}>{techStack.join(' - ')}</code>
           <div className={styles.suppliedContent}>{modalContent}</div>
           <div className={styles.modalFooter}>
             <p className={styles.linksText}>Links</p>
@@ -77,7 +82,7 @@ export const ProjectModal = ({
       </motion.div>
     </div>
   );
-  if (!isOpen) return <></>;
-  // @ts-ignore
-  return ReactDOM.createPortal(content, document.getElementById('root'));
-};
+  if (!isOpen) return null;
+
+  return ReactDOM.createPortal(content, document.getElementById('modal-root')!);
+}

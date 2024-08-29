@@ -18,10 +18,10 @@ export default function Projects() {
 const projects = [
   {
     title: 'Project 1',
-    imgSrc: '/public/project-images/coding-for-kids.png',
-    sourceCode: '#',
+    imgSrc: '/project-images/coding-for-kids.png',
+    sourceCode: 'https://github.com/deanattias/',
     projectLink: '#',
-    techStack: ['Next.js', 'Tailwind CSS'],
+    techStack: ['Next.js', 'React', 'Tailwind CSS'],
     description: 'A very complex project.',
     modalContent: (
       <>
@@ -32,8 +32,8 @@ const projects = [
   },
   {
     title: 'Project 2',
-    imgSrc: '/public/project-images/coding-for-kids.png',
-    sourceCode: '#',
+    imgSrc: '/project-images/coding-for-kids.png',
+    sourceCode: 'https://github.com/deanattias/',
     projectLink: '#',
     techStack: ['Next.js', 'Tailwind CSS'],
     description: 'A very complex project.',
@@ -46,8 +46,8 @@ const projects = [
   },
   {
     title: 'Project 3',
-    imgSrc: '/public/project-images/coding-for-kids.png',
-    sourceCode: '#',
+    imgSrc: '/project-images/coding-for-kids.png',
+    sourceCode: 'https://github.com/deanattias/',
     projectLink: '#',
     techStack: ['Next.js', 'Tailwind CSS'],
     description: 'A very complex project.',
@@ -60,8 +60,8 @@ const projects = [
   },
   {
     title: 'Project 4',
-    imgSrc: '/public/project-images/coding-for-kids.png',
-    sourceCode: '#',
+    imgSrc: '/project-images/coding-for-kids.png',
+    sourceCode: 'https://github.com/deanattias/',
     projectLink: '#',
     techStack: ['Next.js', 'Tailwind CSS'],
     description: 'A very complex project.',

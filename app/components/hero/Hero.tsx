@@ -17,11 +17,9 @@ export default function Hero() {
             <h1 className={styles.title}>Hi, I&apos;m Dean 👋🏼</h1>
           </Reveal>
           <Reveal>
-            <h1></h1>
-          </Reveal>
-          <Reveal>
             <code>$ whoami</code>
           </Reveal>
+          <br />
           <Reveal>
             <h2 className={styles.subtitle}>
               I&apos;m a <span>Full Stack Developer</span>

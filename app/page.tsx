@@ -2,6 +2,8 @@
 
 import styles from './Home.module.scss';
 import About from './components/about/About';
+import Contact from './components/contact/Contact';
+import Experience from './components/experience/Experience';
 import Hero from './components/hero/Hero';
 import Heading from './components/nav/Heading';
 import SideBar from './components/nav/SideBar';
@@ -17,6 +19,8 @@ export default function Home() {
           <Hero />
           <About />
           <Projects />
+          <Experience />
+          <Contact />
           <div
             style={{
               height: '200px',
