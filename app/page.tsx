@@ -1,6 +1,6 @@
 'use client';
 
-import styles from './Home.module.scss';
+import styles from './home.module.scss';
 import About from './components/about/About';
 import Contact from './components/contact/Contact';
 import Experience from './components/experience/Experience';

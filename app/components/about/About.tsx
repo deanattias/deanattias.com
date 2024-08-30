@@ -21,7 +21,7 @@ export default function About() {
           <Reveal>
             <div className={styles.aboutText}>
               <p>
-                Recently, I've completed an innovative program by{' '}
+                Recently, I&apos;ve completed an innovative program by{' '}
                 <Link href="https://grtech.co.il/en/webbev-syllabus/">
                   <strong>Google and Reichman University</strong>
                 </Link>
