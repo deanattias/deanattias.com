@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import Reveal from '../utils/Reveal';
-import { AiFillMail } from 'react-icons/ai';
 import styles from './Contact.module.scss';
+import { MdEmail } from 'react-icons/md';
 
 export default function Contact() {
   return (
@@ -19,8 +19,8 @@ export default function Contact() {
         <Reveal width="100%">
           <Link href={'mailto:dean.attias@gmail.com'}>
             <div className={styles.contactEmail}>
-              <AiFillMail size="2.4rem" />
-              <span>Send Email</span>
+              <MdEmail size="2.4rem" />
+              <span>dean.attias@gmail.com</span>
             </div>
           </Link>
         </Reveal>

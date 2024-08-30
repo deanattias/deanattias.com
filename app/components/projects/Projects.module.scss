@@ -2,6 +2,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 3.2rem;
+  line-height: 1.5;
 
   @media (max-width: 768px) {
     grid-template-columns: 1fr;
@@ -75,7 +76,7 @@
 
 .projectDescription {
   font-weight: 200;
-  margin-top: 2rem;
+  margin-top: 2rem; 
 
   span {
     display: flex;

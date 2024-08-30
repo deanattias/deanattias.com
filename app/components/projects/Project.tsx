@@ -18,7 +18,7 @@ interface Props {
   imgSrc: string;
   techStack: string[];
   title: string;
-  sourceCode: string;
+  sourceCode?: string | null;
 }
 
 export default function Project({
@@ -79,9 +79,11 @@ export default function Project({
             <div className={styles.projectTitle}>
               <h4>{title}</h4>
               <div className={styles.projectTitleLine} />
-              <Link href={sourceCode} target="_blank" rel="nofollow">
-                <AiFillGithub size="2.8rem" />
-              </Link>
+              {sourceCode && (
+                <Link href={sourceCode} target="_blank" rel="nofollow">
+                  <AiFillGithub size="2.8rem" />
+                </Link>
+              )}
               <Link href={projectLink} target="_blank" rel="nofollow">
                 <BsFillRocketTakeoffFill size="2.5rem" />
               </Link>

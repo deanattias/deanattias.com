@@ -35,7 +35,7 @@ export default function Stats() {
         <div className={styles.statColumn}>
           <h4>
             <AiFillExperiment size="2.4rem" color="var(--brand)" />
-            <span>Experimenting with</span>
+            <span>Experimenting with..</span>
           </h4>
           <div className={styles.statGrid}>
             <code className="chip">Nuxt</code>

@@ -23,12 +23,7 @@ export default function ExperienceItem({
     <div className={styles.experience}>
       <div className={styles.heading}>
         <Reveal>
-          <span className={styles.company}>
-            {comapny} -{' '}
-            <Link href="https://codingforkids.io">
-              <i>codingforkids.io</i>
-            </Link>
-          </span>
+          <span className={styles.company}>{comapny}</span>
         </Reveal>
 
         <Reveal>

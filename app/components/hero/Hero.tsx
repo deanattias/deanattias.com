@@ -4,6 +4,7 @@ import Reveal from '../utils/Reveal';
 import styles from './Hero.module.scss';
 import Image from 'next/image';
 import Profile from '@/public/profile.jpg';
+import Link from 'next/link';
 
 export default function Hero() {
   return (
@@ -19,19 +20,31 @@ export default function Hero() {
           <Reveal>
             <code>$ whoami</code>
           </Reveal>
-          <br />
           <Reveal>
             <h2 className={styles.subtitle}>
               I&apos;m a <span>Full Stack Developer</span>
             </h2>
           </Reveal>
           <Reveal>
-            <p className={styles.about}>
-              I loves tackling hard, important problems alongside talented
-              people. With a solid foundation in computer science fundamentals
-              and hands-on experience in web development, I&apos;m passionate
-              about continuously learning and improving.
-            </p>
+            <div className={styles.about}>
+              <p>
+                A self-driven learner who enjoys solving complex problems and
+                collaborating with talented teams.
+              </p>
+              <br />
+              <p>
+                Currently interning at <Link href="#experience">LearnX</Link>,
+                where we are building{' '}
+                <Link target="_blank" href="https://codingforkids.io/">
+                  <i>codingforkids.io</i>
+                </Link>
+                {', '}
+                an <Link href="#projects">innovative web platform</Link> for
+                teaching kids how to code through engaging games. My involvement
+                includes developing client-side and server-side features
+                end-to-end.
+              </p>
+            </div>
           </Reveal>
           <Reveal>
             <StandardButton

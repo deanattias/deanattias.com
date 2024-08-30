@@ -16,7 +16,7 @@ interface Props {
   setIsOpen: Function;
   title: string;
   imgSrc: string;
-  sourceCode: string;
+  sourceCode?: string | null;
   projectLink: string;
   techStack: string[];
   modalContent: JSX.Element;
@@ -65,16 +65,18 @@ export default function ProjectModal({
         />
         <div className={styles.modalContent}>
           <h4>{title}</h4>
-          <code className={styles.modalTechStack}>{techStack.join(' - ')}</code>
+          <code className={styles.modalTechStack}>{techStack.join(' • ')}</code>
           <div className={styles.suppliedContent}>{modalContent}</div>
           <div className={styles.modalFooter}>
             <p className={styles.linksText}>Links</p>
             <div className={styles.links}>
-              <Link target="_blank" rel="nofollow" href={sourceCode}>
-                <AiFillGithub />
-                <span></span>
-                Source Code
-              </Link>
+              {sourceCode && (
+                <Link target="_blank" rel="nofollow" href={sourceCode}>
+                  <AiFillGithub />
+                  <span></span>
+                  Source Code
+                </Link>
+              )}
               <Link target="_blank" rel="nofollow" href={projectLink}>
                 <BsFillRocketTakeoffFill /> <span></span>Website
               </Link>

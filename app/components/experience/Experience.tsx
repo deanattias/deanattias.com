@@ -19,8 +19,8 @@ const experience = [
     period: 'Mar 2024 - Present',
     location: 'Remote',
     description: [
-      'Implemented client-side features using React, TypeScript, and Material UI, enhancing user experience and engagement.',
-      'Developed and maintained RESTful APIs with FastAPI and managed data in PostgreSQL, improving application performance and scalability.',
+      'Implementing client-side features using React, TypeScript, and Material UI, enhancing user experience and engagement.',
+      'Developing and maintaining RESTful APIs with FastAPI and managing data in PostgreSQL, improving application performance and scalability.',
     ],
     techStack: [
       'TypeScript',
@@ -32,5 +32,16 @@ const experience = [
       'SQLAlchemy',
       'Docker',
     ],
+  },
+  {
+    company: 'EY Israel',
+    position: 'Manager, Strategy and Transactions',
+    period: 'Aug 2018 - May 2023',
+    location: 'Tel Aviv, Israel',
+    description: [
+      'Developed strong problem-solving and analytical skills by analyzing complex data, advising tech companies on M&A transactions.',
+      'Collaborated with cross-functional teams to implement process improvements, resulting in a measurable increase in operational efficiency.',
+    ],
+    techStack: ['Problem-solving', 'Analytical thinking', 'Business strategy'],
   },
 ];

@@ -2,9 +2,10 @@
   display: grid;
   grid-template-columns: 1fr 300px;
   gap: 2.4rem;
+  line-height: 1.6;
 
   @media (max-width: 900px) {
-    gtid-template-columns: 1fr;
+    grid-template-columns: 1fr;
   }
 }
 
@@ -12,7 +13,10 @@
   margin-bottom: 2.4rem;
   font-weight: 200;
   code {
-    line-height: 2;
+    line-height: 1.6;
+  }
+  a:hover {
+    text-decoration: underline;
   }
 }
 
