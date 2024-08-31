@@ -13,7 +13,8 @@ export default function Contact() {
         <Reveal width="100%">
           <p className={styles.contactText}>
             Feel free to connect with me on{' '}
-            <Link href={'https://linkedin.com/in/dean-attias/'}>LinkedIn</Link>.
+            <Link href={'https://linkedin.com/in/dean-attias/'}>LinkedIn</Link>{' '}
+            or send me an email.
           </p>
         </Reveal>
         <Reveal width="100%">
