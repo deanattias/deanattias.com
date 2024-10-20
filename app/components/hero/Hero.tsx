@@ -22,7 +22,7 @@ export default function Hero() {
           </Reveal>
           <Reveal>
             <h2 className={styles.subtitle}>
-              I&apos;m a <span>Full Stack Developer</span>
+              I&apos;m a <span>Software Developer</span>
             </h2>
           </Reveal>
           <Reveal>
@@ -33,7 +33,7 @@ export default function Hero() {
               </p>
               <br />
               <p>
-                Currently interning at <Link href="#experience">LearnX</Link>,
+                Currently at <Link href="#experience">LearnX</Link>,
                 where we are building{' '}
                 <Link target="_blank" href="https://codingforkids.io/">
                   <i>codingforkids.io</i>

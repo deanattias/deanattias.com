@@ -14,8 +14,9 @@ export default function About() {
         <div>
           <Reveal>
             <p className={styles.aboutText}>
-              I&apos;m a full stack developer with hands-on experience and a
-              strong foundation in computer science.
+              I&apos;m a Software Developer with a strong foundation in computer science 
+              and hands-on experience in web development. 
+
             </p>
           </Reveal>
           <Reveal>
@@ -31,13 +32,15 @@ export default function About() {
               </p>
               <br />
               <p>
-                Currently interning at LearnX, developing client-side and
-                server-side features using <code className="chip">React</code>,{' '}
-                <code className="chip">TypeScript</code>,{' '}
+                Currently at LearnX, building client-side features and
+                server-side functionalities using 
                 <code className="chip">Python</code>,{' '}
                 <code className="chip">FastAPI</code>,{' '}
-                <code className="chip">Docker</code>, and{' '}
+                <code className="chip">TypeScript</code>,{' '}
+                <code className="chip">React</code>,{' '}
                 <code className="chip">PostgreSQL</code>.
+                , and{' '}
+                <code className="chip">Docker</code>
               </p>
             </div>
           </Reveal>
